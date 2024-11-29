@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Sound Recognization</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
+
+<style>
+      body {
+      background-image: url(/static/bird.jpg);
+      background-size: cover;
+    }
+    .midd{
+        text-align: center;
+        margin: auto;
+        padding: 250px;
+    }
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">Bird Sound Recognization</h1>
+    <section class="main">
+    <div class="midd">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="speech_file">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    </section>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
